@@ -155,7 +155,7 @@ const Guest = styled.div`
   }
 `;
 
-const Price = styled.div<{ $isPaid: boolean }>`
+const Price = styled.div<{ $isPaid: boolean | undefined }>`
   display: flex;
   align-items: center;
   justify-content: space-between;

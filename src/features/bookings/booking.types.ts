@@ -1,6 +1,15 @@
 import { Status } from "../../utils/types";
 import { TCabin } from "../cabins/cabin.types";
-import { TGuest } from "../guests/guest.types";
+
+type TGuest = {
+  id: number;
+  email: string;
+  fullName: string;
+  created_at: string;
+  nationalId: string;
+  countryFlag: string | null;
+  nationality: string;
+};
 
 export type TBooking = {
   id: number;
