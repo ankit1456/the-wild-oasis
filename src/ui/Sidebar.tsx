@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Logo from "./Logo";
 import MainNav from "./MainNav";
-import Uploader from "../data/Uploader";
+
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
@@ -11,7 +11,7 @@ const Sidebar = () => {
         <Logo />
       </Link>
       <MainNav />
-      <Uploader />
+      {/* <Uploader /> */}
     </StyledSidebar>
   );
 };
