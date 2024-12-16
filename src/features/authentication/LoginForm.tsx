@@ -9,7 +9,7 @@ import styled from "styled-components";
 import { Conditional } from "../../ui";
 
 function LoginForm() {
-  const [email, setEmail] = useState("ankit@example.com");
+  const [email, setEmail] = useState("dummy@example.com");
   const [password, setPassword] = useState("test1234");
 
   const { isPending, loginMutate } = useLogin();
