@@ -3,17 +3,21 @@ import Logo from "./Logo";
 import MainNav from "./MainNav";
 
 import { Link } from "react-router-dom";
+import Uploader from "../data/Uploader";
+import { useUser } from "../features/authentication";
+import Conditional from "./Conditional";
 
 const Sidebar = () => {
+  const { user } = useUser();
   return (
     <StyledSidebar>
       <Link to="/">
         <Logo />
       </Link>
       <MainNav />
-      {/* <Conditional test={user?.email === "ankittripathi1201@gmail.com"}>
+      <Conditional test={user?.email === "ankittripathi1201@gmail.com"}>
         <Uploader />
-      </Conditional> */}
+      </Conditional>
     </StyledSidebar>
   );
 };
